@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Social - PicoPlanet Developing</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon.ico"></link>
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		.mdl-layout__content .heading-div .heading {
+			background-image: url('PicoPlanetBackground6.PNG');
+			background-position: top;
+		}
+	</style>
+	<script>
+		$(function(){
+			$('.mdl-collapse__content').each(function(){
+				var content = $(this);
+				content.css('margin-top', -content.height());
+			})
+
+			$(document.body).on('click', '.mdl-collapse__button', function(){
+				$(this).parent('.mdl-collapse').toggleClass('mdl-collapse--opened');
+			})
+		})
+	</script>
+
+</head>
+<body>
+	<!-- Nav layout with menu -->
+	<div class="layout-transparent mdl-layout mdl-js-layout">
+		<header class="mdl-layout__header mdl-layout__header--fixed">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">PicoPlanet Developing</span>
+			</div>
+		</header>
+
+		<!-- navigation drawer -->
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title"><img src="planet-clip-art-planet-1960-clear.png" alt="logo" height="42" width="42"></span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="index.html">Home</a>
+				<div class="mdl-collapse">
+					<a class="mdl-navigation__link mdl-collapse__button">
+						<i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+						Apps
+					</a>
+					<div class="mdl-collapse__content-wrapper">
+						<div class="mdl-collapse__content mdl-animation--default">
+							<a class="mdl-navigation__link" href="apps.html">Apps</a>
+							<a class="mdl-navigation__link" href="files.html">Files</a>
+							<a class="mdl-navigation__link" href="vr-playground.html">VR Playground</a>
+							<a class="mdl-navigation__link" href="rabbit-dash.html">Rabbit Dash</a>
+							<a class="mdl-navigation__link" href="chemistry-vr-photos.html">Chemistry VR Photos</a>
+						</div>
+					</div>
+				</div>
+				<a class="mdl-navigation__link" href="social.html">Social</a>
+			</nav>
+		</div>
+
+		<!-- page content -->
+		<main class="mdl-layout__content">
+			<!-- heading -->
+			<div class="heading-div">
+				<h1 class="heading">Social</h1>
+			</div>
+
+			<p class="paragraph">
+				<b>We have many ways to connect!</b>
+				<br>
+				<br>
+				<b>Email:</b> picoplanetdev@gmail.com
+				<br>
+				<b>Website:</b> <a href="http://picoplanetdev.tk">picoplanetdev.tk</a> (beta) or <a href="http://sites.google.com/view/picoplanetdev" target="_blank">sites.google.com/view/picoplanetdev</a>
+				<br>
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSdcRNLWjQGhYNb7e6DcaW9Ox6cwVp_5VZPcM8lw5i3un3aP1A/viewform?usp=sf_link" target="_blank">
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+					Sign up for our newsletter!
+				</button>
+				</a>
+			</p>
+			<!-- share -->
+			<p class="paragraph">
+				Share this site on Social Media below!
+				<br>
+				<a href="http://mail.google.com" target="_blank">Gmail</a>
+				<a href="http://www.linkedin.com" target="_blank">LinkedIn</a>
+				<a href="http://twitter.com" target="_blank">Twitter</a>
+				<a href="http://facebook.com" target="_blank">Facebook</a>
+				<a href="http://reddit.com" target="_blank">Reddit</a>
+			</p>
+		</main>
+	</div>
+</body>
+</html>
