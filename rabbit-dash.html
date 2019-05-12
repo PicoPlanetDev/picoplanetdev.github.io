@@ -1,94 +1,96 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Rabbit Dash - PicoPlanet Developing</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="favicon.ico"></link>
-	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<style type="text/css">
-		.mdl-layout__content .heading-div .heading {
-			background-image: url('rabbit-dash-header.PNG');
-		}
-	</style>
+	<head>
+		<title>Rabbit Dash - PicoPlanet Developing</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="favicon.ico"></link>
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			.mdl-layout__content .heading-div .heading {
+				background-image: url('rabbit-dash-header.PNG');
+			}
+		</style>
 
-	<script>
-		$(function(){
-			$('.mdl-collapse__content').each(function(){
-				var content = $(this);
-				content.css('margin-top', -content.height());
+		<script>
+			$(function(){
+				$('.mdl-collapse__content').each(function(){
+					var content = $(this);
+					content.css('margin-top', -content.height());
+				})
+
+				$(document.body).on('click', '.mdl-collapse__button', function(){
+					$(this).parent('.mdl-collapse').toggleClass('mdl-collapse--opened');
+				})
 			})
+		</script>
+	</head>
 
-			$(document.body).on('click', '.mdl-collapse__button', function(){
-				$(this).parent('.mdl-collapse').toggleClass('mdl-collapse--opened');
-			})
-		})
-	</script>
-</head>
+	<body>
+		<!-- Nav layout with menu -->
+		<div class="layout-transparent mdl-layout mdl-js-layout">
+			<header class="mdl-layout__header mdl-layout__header--fixed">
+				<div class="mdl-layout__header-row">
+					<!-- Title -->
+					<span class="mdl-layout-title">PicoPlanet Developing</span>
+				</div>
+			</header>
 
-<body>
-	<!-- Nav layout with menu -->
-	<div class="layout-transparent mdl-layout mdl-js-layout">
-		<header class="mdl-layout__header mdl-layout__header--fixed">
-			<div class="mdl-layout__header-row">
-				<!-- Title -->
-				<span class="mdl-layout-title">PicoPlanet Developing</span>
-			</div>
-		</header>
+			<!-- navigation drawer -->
+			<div class="mdl-layout__drawer">
+				<span class="mdl-layout-title"><a href="index.html"><img src="planet-clip-art-planet-1960-clear.png" alt="logo" height="42" width="42"></a></span>
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="index.html">Home</a>
 
-		<!-- navigation drawer -->
-		<div class="mdl-layout__drawer">
-			<span class="mdl-layout-title"><a href="index.html"><img src="planet-clip-art-planet-1960-clear.png" alt="logo" height="42" width="42"></a></span>
-			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="index.html">Home</a>
-
-				<div class="mdl-collapse">
-					<a class="mdl-navigation__link mdl-collapse__button">
-						<i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
-						Apps
-					</a>
-					<div class="mdl-collapse__content-wrapper">
-						<div class="mdl-collapse__content mdl-animation--default">
-							<a class="mdl-navigation__link" href="apps.html">Apps</a>
-							<a class="mdl-navigation__link" href="files.html">Files</a>
-							<a class="mdl-navigation__link" href="vr-playground.html">VR Playground</a>
-							<a class="mdl-navigation__link" href="rabbit-dash.html">Rabbit Dash</a>
-							<a class="mdl-navigation__link" href="chemistry-vr-photos.html">Chemistry VR Photos</a>
+					<div class="mdl-collapse">
+						<a class="mdl-navigation__link mdl-collapse__button">
+							<i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+							Apps
+						</a>
+						<div class="mdl-collapse__content-wrapper">
+							<div class="mdl-collapse__content mdl-animation--default">
+								<a class="mdl-navigation__link" href="apps.html">Apps</a>
+								<a class="mdl-navigation__link" href="files.html">Files</a>
+								<a class="mdl-navigation__link" href="vr-playground.html">VR Playground</a>
+								<a class="mdl-navigation__link" href="rabbit-dash.html">Rabbit Dash</a>
+								<a class="mdl-navigation__link" href="chemistry-vr-photos.html">Chemistry VR Photos</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<a class="mdl-navigation__link" href="social.html">Social</a>
-				<a class="mdl-navigation__link" href="contact.html">Contact Us</a>
-			</nav>
-		</div>
-
-		<!-- page content -->
-		<main class="mdl-layout__content">			
-			<!-- heading -->
-			<div class="heading-div">
-				<h1 class="heading">Rabbit Dash</h1>
+					<a class="mdl-navigation__link" href="social.html">Social</a>
+					<a class="mdl-navigation__link" href="contact.html">Contact Us</a>
+				</nav>
 			</div>
 
-			<!-- paragraph -->
-			<p class="paragraph">
-				Rabbit Dash is a VR runner game where the player is a rabbit that you need to steer to eat carrots. Please try it out by downloading the latest APK from the <a href="files.html">Files</a> section or grabbing <a href="https://play.google.com/store/apps/details?id=com.PicoPlanetDev.RabbitDash">Rabbit Dash</a> on the Play Store! PicoPlanet currently has six levels of stunning scenery with carrots tucked in everywhere for you to find. We are working on even more levels, which will be coming soon!
-				<br>
-				<br>
-				Need help using an APK file? Watch the tutorials in the <a href="files.html">Files</a> section.
-			</p>
-			<!-- share -->
-			<hr>
-			<p class="paragraph">
-				Share this page via
-			</p>
-			<!-- Go to www.addthis.com/dashboard to customize your tools -->
-			<div class="addthis_inline_share_toolbox"></div>			
-		</main>
-	</div>
-	<!-- Go to www.addthis.com/dashboard to customize your tools -->
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cd8613086e226db"></script>
-</body>
+			<!-- page content -->
+			<main class="mdl-layout__content">			
+				<!-- heading -->
+				<div class="heading-div">
+					<h1 class="heading">Rabbit Dash</h1>
+				</div>
+
+				<!-- paragraph -->
+				<p class="paragraph">
+					Rabbit Dash is a VR runner game where the player is a rabbit that you need to steer to eat carrots. Please try it out by downloading the latest APK from the <a href="files.html">Files</a> section or grabbing <a href="https://play.google.com/store/apps/details?id=com.PicoPlanetDev.RabbitDash">Rabbit Dash</a> on the Play Store! PicoPlanet currently has six levels of stunning scenery with carrots tucked in everywhere for you to find. We are working on even more levels, which will be coming soon!
+					<br>
+					<br>
+					Need help using an APK file? Watch the tutorials in the <a href="files.html">Files</a> section.
+				</p>
+				<!-- share -->
+				<hr>
+				<p class="paragraph">
+					Share this page via
+					<br>
+					<!-- Go to www.addthis.com/dashboard to customize your tools -->
+					<div class="addthis_inline_share_toolbox" style="padding-left: 1%"></div>	
+				</p>
+				
+			</main>
+		</div>
+		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cd8613086e226db"></script>
+	</body>
 </html>
