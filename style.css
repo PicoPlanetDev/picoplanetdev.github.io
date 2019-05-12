@@ -1,9 +1,13 @@
-.layout-transparent {
+.demo-layout-transparent {
 	background: url('../assets/demos/transparent.jpg') center / cover;
 }
-.layout-transparent .mdl-layout__header,
-.layout-transparent .mdl-layout__drawer-button {
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
 	color: #444444;
+}
+
+.demo-layout-transparent .mdl-layout__header {
+
 }
 .mdl-layout__content {
 
@@ -15,6 +19,7 @@
 	color: #FFFFFF;
 	padding-top: 10%;
 	padding-bottom: 10%;
+	margin: 0;
 }
 
 .mdl-layout__content .paragraph {
@@ -52,6 +57,7 @@
 	padding-left: 1.5%;
 	padding-right: 1.5%%;
 	padding-bottom: 1.5%;
+	padding-top: 1.5%;
 }
 
 .mdl-collapse.mdl-collapse--opened {
