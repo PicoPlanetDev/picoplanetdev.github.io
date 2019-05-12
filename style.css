@@ -30,6 +30,7 @@
 	padding-right: 1%;
 	padding-top: 1%;
 	padding-bottom: 1%;
+	margin-bottom: 0%;
 	color: #444444;
 }
 
@@ -44,7 +45,7 @@
 	padding-bottom: 1%;
 	color: #444444;
 	background-color: #F4F4F4;
-	display: block;
+	margin-bottom: 0%;
 }
 
 .mdl-layout__content .emphasis-2-paragraph {
@@ -54,6 +55,7 @@
 	padding-bottom: 1%;
 	color: #000000;
 	background-color: #4da0f4;
+	margin-bottom: 0%;
 }
 
 .mdl-layout__content .tri-image {
