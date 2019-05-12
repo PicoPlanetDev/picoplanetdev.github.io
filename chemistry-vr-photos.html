@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chemistry VR Photos - PicoPlanet Developing</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="favicon.ico"></link>
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<!-- Uses a transparent header that draws on top of the layout's background -->
+		<style>
+			.layout-transparent {
+				background: url('../assets/demos/transparent.jpg') center / cover;
+			}
+			.layout-transparent .mdl-layout__header,
+			.layout-transparent .mdl-layout__drawer-button {
+				color: #444444;
+			}
+			.mdl-layout__content {
+
+			}
+			.mdl-layout__content .heading-div .heading {
+				background-image: url('PANO_1.jpg');
+				background-size: 100%;
+				background-position: center;
+				text-align: center;
+				color: #FFFFFF;
+				padding-top: 10%;
+				padding-bottom: 10%;
+			}
+
+			.mdl-layout__content .paragraph {
+				padding-left: 1%; 
+				padding-right: 1%;
+				padding-top: 1%;
+				padding-bottom: 1%;
+				color: #444444;
+			}
+
+			.mdl-layout__content .paragraph .bulleted-list {
+				color: #444444;
+			}
+
+			.mdl-layout__content .emphasis-1-paragraph {
+				padding-left: 1%;
+				padding-right: 1%;
+				padding-top: 1%;
+				padding-bottom: 1%;
+				color: #444444;
+				background-color: #F4F4F4;
+				display: block;
+			}
+
+			.mdl-layout__content .emphasis-2-paragraph {
+				padding-left: 1%;
+				padding-right: 1%;
+				padding-top: 1%;
+				padding-bottom: 1%;
+				color: #000000;
+				background-color: #4da0f4;
+			}
+
+			.mdl-layout__content .tri-image {
+				padding-left: 1.5%;
+				padding-right: 1.5%%;
+				padding-bottom: 1.5%;
+			}
+
+			.mdl-collapse.mdl-collapse--opened {
+				border-top: 1px solid #e0e0e0;
+				border-bottom: 1px solid #e0e0e0;
+				margin-top: -1px;
+			}
+
+			.mdl-collapse.mdl-collapse--opened + .mdl-collapse.mdl-collapse--opened {
+				border-top: none;
+				margin-top: 0;
+			}
+
+			.mdl-collapse .mdl-collapse__content-wrapper {
+				overflow: hidden;
+			}
+
+			.mdl-collapse .mdl-collapse__content {
+				transition-property: margin-top;
+				transition-duration: 0.2s;
+			}
+
+			.mdl-collapse .mdl-collapse__icon {
+				transition-property: transform;
+				transition-duration: 0.2s;
+				color: rgba(0,0,0,0.3);
+
+				/* MDL should provide some facility for positioning icons inside list items so I don't have to do this */
+				position: absolute;
+				right: 6px;
+				margin-top: -3px;
+			}
+
+			.mdl-collapse.mdl-collapse--opened .mdl-collapse__icon {
+				transform: rotate(-180deg);
+			}
+
+			.mdl-collapse.mdl-collapse--opened .mdl-collapse__button {
+				color: #4ea0f4;
+			}
+
+			.mdl-collapse.mdl-collapse--opened .mdl-collapse__content {
+				margin-top: 0 !important;
+			}
+		</style>
+		
+		<script>
+			$(function(){
+				$('.mdl-collapse__content').each(function(){
+					var content = $(this);
+					content.css('margin-top', -content.height());
+				})
+
+				$(document.body).on('click', '.mdl-collapse__button', function(){
+					$(this).parent('.mdl-collapse').toggleClass('mdl-collapse--opened');
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+		<!-- Nav layout with menu -->
+		<div class="layout-transparent mdl-layout mdl-js-layout">
+			<header class="mdl-layout__header mdl-layout__header--transparent">
+				<div class="mdl-layout__header-row">
+					<!-- Title -->
+					<span class="mdl-layout-title">PicoPlanet Developing</span>
+				</div>
+			</header>
+
+			<!-- navigation drawer -->
+			<div class="mdl-layout__drawer">
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="index.html">Home</a>
+
+					<div class="mdl-collapse">
+						<a class="mdl-navigation__link mdl-collapse__button">
+							<i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+							Apps
+						</a>
+						<div class="mdl-collapse__content-wrapper">
+							<div class="mdl-collapse__content mdl-animation--default">
+								<a class="mdl-navigation__link" href="apps.html">Apps</a>
+								<a class="mdl-navigation__link" href="files.html">Files</a>
+								<a class="mdl-navigation__link" href="vr-playground.html">VR Playground</a>
+								<a class="mdl-navigation__link" href="rabbit-dash.html">Rabbit Dash</a>
+								<a class="mdl-navigation__link" href="chemistry-vr-photos.html">Chemistry VR Photos</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<!-- page content -->
+			<main class="mdl-layout__content">			
+				<!-- heading -->
+				<div class="heading-div">
+					<h1 class="heading">Chemistry VR Photos</h1>
+				</div>
+
+				<!-- paragraph -->
+				<p class="emphasis-2-paragraph">
+					An app to celebrate Mr. Kernion's retirement. If you have an <b>Android device and VR Viewer</b>, please refer to the email I sent for the installer. 
+
+					<b>If you don't</b> have and Android device or a VR viewer, please scroll down for the <b>web version</b>. This is intended to run on a modern PC or laptop with the latest version of Google Chrome, Mozilla Firefox, or Microsoft Edge. The instructions for the web version are listed below the game.
+				</p>
+				<iframe src="https://c.simmer.io/static/unityFrame/index.html?url=https%3A%2F%2Fsimmercdn.com%2Funity%2FJlJvMznBLSPQPtVRbENSdEnGsAF3%2Fcontent%2F58f9546f-cf78-5011-9557-3ea5af44c611&imagePath=screens/5.png" style="width:100%;height:640px;border:0">
+				</iframe>
+
+				<p class="paragraph">
+					<b>How to play:</b>
+					<ul class="bulleted-list">
+						<li>Click and drag to look around. If you are using a laptop with no mouse, hold the primary button and drag your finger.</li>
+						<li>Click on a glowing photo sphere to enter it.</li>
+						<ul class="bulleted-list">
+							<li>When inside a photo sphere, click on the blue Erlenmeyer flask to move to the other photo sphere.</li>
+							<li>When inside a photo sphere, look down and click on the home button to leave the photo sphere.</li>
+						</ul>
+					</ul>
+				</p>
+				<p class="emphasis-2-paragraph">
+					<b>Note:</b> Make sure that you have <b>a strong internet connection</b> and aren't on a filtered network, e.g. a school or work network (This is because the website game host's domain ends in .io and many network filters will block it). A good network would be a library or home network.</p>
+
+					<!-- share -->
+					<p class="paragraph">
+						Share this page via
+						<br>
+						<a href="http://mail.google.com" target="_blank">Gmail</a>
+						<a href="http://www.linkedin.com" target="_blank">LinkedIn</a>
+						<a href="http://twitter.com" target="_blank">Twitter</a>
+						<a href="http://facebook.com" target="_blank">Facebook</a>
+						<a href="http://reddit.com" target="_blank">Reddit</a>
+					</p>
+				</main>
+			</div>
+		</body>
+</html>
