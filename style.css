@@ -23,6 +23,7 @@
 	padding-top: 10%;
 	padding-bottom: 10%;
 	margin: 0;
+	background-attachment: fixed;
 }
 
 .mdl-layout__content .paragraph {
