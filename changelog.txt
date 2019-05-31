@@ -1,3 +1,11 @@
+5/31/2019:
+Added <meta name="viewport" content="width=device-width, initial-scale=1.0"> to fix scaling on index.html.
+
+This affects the following files:
+index.html
+changelog.txt
+
+
 5/27/2019:
 Changed PANO_X to PANO_X_WEB and reduced file sizes for each panorama by ~5MB.
 Updated chemistry-vr-photos.html to incorporate these changes.
