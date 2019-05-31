@@ -6,6 +6,14 @@ index.html
 changelog.txt
 
 
+5/31/2019:
+Added links to pictures in order to enlarge them.
+
+This affects the following files:
+chemistry-vr-photos.html
+changelog.txt
+
+
 5/27/2019:
 Changed PANO_X to PANO_X_WEB and reduced file sizes for each panorama by ~5MB.
 Updated chemistry-vr-photos.html to incorporate these changes.
