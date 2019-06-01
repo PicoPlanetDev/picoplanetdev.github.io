@@ -1,3 +1,11 @@
+6/1/2019:
+Set background-size to cover so that it stretches and shrinks without repeating.
+
+This affects the following files:
+style.css
+changelog.txt
+
+
 5/31/2019:
 Added about.html for background on PicoPlanet.
 

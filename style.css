@@ -16,8 +16,9 @@
 }
 
 .mdl-layout__content .heading-div .heading {
-	background-size: 100%;
+	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 	text-align: center;
 	color: #FFFFFF;
 	padding-top: 10%;
