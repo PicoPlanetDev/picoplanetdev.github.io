@@ -1,4 +1,14 @@
 5/31/2019:
+Added about.html for background on PicoPlanet.
+
+This affects the following files:
+All .html files
+PicoPlanetBackground7.png
+PicoPlanetBackground8.png
+PicoPlanetBackground9.png
+
+
+5/31/2019:
 Added <meta name="viewport" content="width=device-width, initial-scale=1.0"> to fix scaling on index.html.
 
 This affects the following files:
