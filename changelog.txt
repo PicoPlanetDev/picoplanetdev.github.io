@@ -1,4 +1,21 @@
 6/1/2019:
+Compressed planet-clip-art-planet-1960-clear.png to planet-clip-art-planet-64-clear.png.
+
+This affects the following files:
+planet-clip-art-planet-1960-clear.png
+planet-clip-art-planet-64-clear.png
+changelog.txt
+
+
+6/1/2019:
+Increased resolution of favicon.ico to suit high-density displays.
+
+This affects the following files:
+favicon.ico
+changelog.txt
+
+
+6/1/2019:
 Set background-size to cover so that it stretches and shrinks without repeating.
 
 This affects the following files:
