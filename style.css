@@ -26,6 +26,14 @@
 	background-attachment: fixed;
 }
 
+.demo-card-wide.mdl-card {
+  width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #444444;
+  background-color: #4da0f4;
+}
+
 .mdl-layout__content .paragraph {
 	padding-left: 1%; 
 	padding-right: 1%;
