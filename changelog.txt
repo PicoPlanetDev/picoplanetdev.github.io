@@ -1,4 +1,11 @@
-6/1/2019:
+6/3/2019:
+Updated AddThis links
+
+This affects the following files:
+All .html files, except for 404.html
+
+
+6/3/2019:
 Updated file paths
 
 This affects the following files:
