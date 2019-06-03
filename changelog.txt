@@ -1,8 +1,8 @@
 6/1/2019:
-Added sitemap.xml for Google Search Console
+Updated file paths
 
 This affects the following files:
-sitemap.xml
+chemistry-vr-photos.html
 
 
 6/1/2019:
