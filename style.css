@@ -27,9 +27,6 @@
 	background-attachment: fixed;
 }
 
-.demo-card-wide.mdl-card {
-  width: 100%;
-}
 .demo-card-wide > .mdl-card__title {
   color: #444444;
   background-color: #4da0f4;
@@ -116,4 +113,8 @@
 
 .mdl-collapse.mdl-collapse--opened .mdl-collapse__content {
 	margin-top: 0 !important;
+}
+
+.demo-card-wide.mdl-card {
+  width: 100%;
 }
