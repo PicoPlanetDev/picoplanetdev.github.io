@@ -27,10 +27,6 @@
 	background-attachment: fixed;
 }
 
-.demo-card-wide > .mdl-card__title {
-  color: #444444;
-  background-color: #4da0f4;
-}
 
 .mdl-layout__content .paragraph {
 	padding-left: 1%; 
@@ -115,6 +111,13 @@
 	margin-top: 0 !important;
 }
 
-.demo-card-wide.mdl-card {
-  width: 100%;
+.card-wide.mdl-card {
+  width: 50%;
+}
+.card-wide > .mdl-card__title {
+  color: #fff;
+  height: auto;
+}
+.card-wide > .mdl-card__menu {
+  color: #fff;
 }
