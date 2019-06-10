@@ -112,12 +112,14 @@
 }
 
 .card-wide.mdl-card {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .card-wide > .mdl-card__title {
-  color: #000000;
-  height: 500px;
-  background-width: 100%; 
+	color: #000000;
+	height: 500px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 }
