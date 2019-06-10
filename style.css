@@ -112,11 +112,11 @@
 }
 
 .card-wide.mdl-card {
-  width: 50%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
 .card-wide > .mdl-card__title {
-  color: #FFFFFF;
-  height: 50%;
+  color: #000000;
+  height: 500px;
 }
