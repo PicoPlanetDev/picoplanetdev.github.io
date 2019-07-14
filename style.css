@@ -110,12 +110,3 @@
 .mdl-collapse.mdl-collapse--opened .mdl-collapse__content {
 	margin-top: 0 !important;
 }
-
-.card-wide.mdl-card {
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-}
-.card-wide > .mdl-card__title {
-
-}
