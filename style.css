@@ -28,7 +28,7 @@
 }
 
 
-.mdl-layout__content .p {
+.mdl-layout__content p {
 	padding-left: 1%;
 	padding-right: 1%;
 	padding-top: 1%;
@@ -37,7 +37,7 @@
 	color: #444444;
 }
 
-.mdl-layout__content .paragraph .bulleted-list {
+.mdl-layout__content p .bulleted-list {
 	color: #444444;
 }
 
