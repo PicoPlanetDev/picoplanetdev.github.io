@@ -61,11 +61,7 @@
 	margin-bottom: 0%;
 }
 
-.mdl-layout__content .emphasis-2-paragraph .a {
-	color: #03e3fc
-}
-
-.mdl-layout__content .emphasis-2-paragraph .p .a {
+.mdl-layout__content .emphasis-2-paragraph a {
 	color: #03e3fc
 }
 
