@@ -1,0 +1,51 @@
+<!--Colors by Group https://www.w3schools.com/colors/colors_groups.asp-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- A-Frame script-->
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <!-- Event script -->
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    <meta charset="utf-8">
+    <title>Beginner VR HTML</title>
+  </head>
+  <body>
+    <a-scene> <!-- Creates the VR scene -->
+      <!-- Sky -->
+      <a-sky color="deepskyblue"></a-sky>
+
+      <!-- Ground -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#7ec850"></a-plane>
+
+      <!--Camera with Reticle-->
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+
+      <!-- Demo -->
+      <a-box position="-3 0.5 -2.5" rotation="0 45 0" color="dodgerblue"></a-box>
+      <a-sphere position="-2 1.25 -4.5" radius="1.25" color="deeppink"></a-sphere>
+      <a-cylinder position="-1 0.75 -2.5" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+
+      <!-- Tree -->
+      <a-cylinder position="3 0.375 -2"  scale="0.2 1 0.2" height="0.75" color="saddlebrown"></a-cylinder>
+      <a-cone position="3 2.25 -2" height="3" color="forestgreen"></a-cone>
+
+      <!-- Lightbulb -->
+      <a-cylinder position="-4 0.5 0.5" radius="0.5" height="1" color="silver"></a-cylinder>
+      <!-- Explain notation -->
+      <a-sphere position="-4 2 0.5" radius="1.25" color="gray"
+        event-set__enter="_event: mouseenter; color: #ffd745"
+        event-set__leave="_event: mouseleave; color: gray">
+      </a-sphere>
+
+      <!-- Explain animation -->
+      <a-box
+        position="-2 1 4"
+        rotation="45 45 45"
+        color="#ffbb00"
+        animation="property: position; to: -2 2 4; dur: 1500; dir: alternate; easing: linear; loop: true;"
+      ></a-box>
+    </a-scene>
+  </body>
+</html>
