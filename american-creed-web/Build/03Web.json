@@ -1,0 +1,16 @@
+{
+"companyName": "PicoPlanetDev",
+"productName": "Vision for the Future",
+"productVersion": "0.3Web",
+"dataUrl": "03Web.data.unityweb",
+"wasmCodeUrl": "03Web.wasm.code.unityweb",
+"wasmFrameworkUrl": "03Web.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#808080",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.2f1"
+}
