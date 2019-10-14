@@ -13,30 +13,30 @@
 	<meta name="keywords" content="PicoPlanet, PicoPlanetDev, App, Apps, VR Playground, Rabbit Dash, Chemistry VR Photos, Development, Dev, Android, Website, Play Store, Games, VR, Unity">
 
 	<style>
-		.mdl-layout__content .heading-div .heading {
-			background-image: url('/images/background/PicoPlanetBackground12.png');
-			padding-top: 15%;
-			padding-bottom: 15%;
-		}
+	.mdl-layout__content .heading-div .heading {
+		background-image: url('/images/background/PicoPlanetBackground12.png');
+		padding-top: 15%;
+		padding-bottom: 15%;
+	}
 	</style>
 
 	<script>
-		$(function(){
-			$('.mdl-collapse__content').each(function(){
-				var content = $(this);
-				content.css('margin-top', -content.height());
-			})
-
-			$(document.body).on('click', '.mdl-collapse__button', function(){
-				$(this).parent('.mdl-collapse').toggleClass('mdl-collapse--opened');
-			})
+	$(function(){
+		$('.mdl-collapse__content').each(function(){
+			var content = $(this);
+			content.css('margin-top', -content.height());
 		})
+
+		$(document.body).on('click', '.mdl-collapse__button', function(){
+			$(this).parent('.mdl-collapse').toggleClass('mdl-collapse--opened');
+		})
+	})
 	</script>
 
 	<script type="text/javascript">
-		var addthis_config = addthis_config||{};
-		addthis_config.data_track_addressbar = false;
-		addthis_config.data_track_clickback = false;
+	var addthis_config = addthis_config||{};
+	addthis_config.data_track_addressbar = false;
+	addthis_config.data_track_clickback = false;
 	</script>
 </head>
 
@@ -108,10 +108,10 @@
 						apps for my own enjoyment!
 					</p>
 					<button onclick="location.href='apps.html';" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-					  Apps
+						Apps
 					</button>
 					<button onclick="location.href='maker.html';" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-					  Maker
+						Maker
 					</button>
 				</div>
 
@@ -133,7 +133,7 @@
 			</p>
 			<hr>
 			<div class="mdl-grid">
-			  <div class="mdl-cell mdl-cell--1-col">
+				<div class="mdl-cell mdl-cell--1-col">
 					<a id="vr-playground-home-icon" href="vr-playground.html">
 						<img src="/images/icons/vr-playground-icon.png" alt="vr-playground-icon" width="100%">
 					</a>
@@ -174,42 +174,41 @@
 				<br>
 				<div class="addthis_inline_share_toolbox" data-url="picoplanetdev.tk/index" data-title="Home - PicoPlanet Developing" style="padding-left: 1%"></div>
 			</p>
+			<footer class="mdl-mega-footer">
+				<div class="mdl-mega-footer__middle-section">
+
+					<div class="mdl-mega-footer__drop-down-section">
+						<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+						<h1 class="mdl-mega-footer__heading"><a href="apps.html">Apps</a></h1>
+						<ul class="mdl-mega-footer__link-list">
+							<li><a href="files.html">Files</a></li>
+							<li><a href="vr-playground.html">VR Playground</a></li>
+							<li><a href="rabbit-dash.html">Rabbit Dash</a></li>
+							<li><a href="chemistry-vr-photos.html">Chemistry VR Photos</a></li>
+							<li><a href="trailblazer-vr.html">Trailblazer VR</a></li>
+						</ul>
+					</div>
+
+					<div class="mdl-mega-footer__drop-down-section">
+						<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+						<h1 class="mdl-mega-footer__heading"><a href="maker.html">Maker</a></h1>
+						<ul class="mdl-mega-footer__link-list">
+							<li><a href="rocketry.html">Rocketry</a></li>
+							<li><a href="3d-printing.html">3D Printing</a></li>
+							<li><a href="laser-cutting.html">Laser Cutting</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="mdl-mega-footer__bottom-section">
+					<div class="mdl-logo">PicoPlanet Developing</div>
+					<ul class="mdl-mega-footer__link-list">
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</footer>
 		</main>
-		<footer class="mdl-mega-footer">
-	  <div class="mdl-mega-footer__middle-section">
-
-	    <div class="mdl-mega-footer__drop-down-section">
-	      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-	      <h1 class="mdl-mega-footer__heading"><a href="apps.html">Apps</a></h1>
-	      <ul class="mdl-mega-footer__link-list">
-	        <li><a href="files.html">Files</a></li>
-	        <li><a href="vr-playground.html">VR Playground</a></li>
-	        <li><a href="rabbit-dash.html">Rabbit Dash</a></li>
-	        <li><a href="chemistry-vr-photos.html">Chemistry VR Photos</a></li>
-					<li><a href="trailblazer-vr.html">Trailblazer VR</a></li>
-	      </ul>
-	    </div>
-
-	    <div class="mdl-mega-footer__drop-down-section">
-	      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-	      <h1 class="mdl-mega-footer__heading"><a href="maker.html">Maker</a></h1>
-	      <ul class="mdl-mega-footer__link-list">
-	        <li><a href="rocketry.html">Rocketry</a></li>
-	        <li><a href="3d-printing.html">3D Printing</a></li>
-	        <li><a href="laser-cutting.html">Laser Cutting</a></li>
-	      </ul>
-	    </div>
-	  </div>
-
-	  <div class="mdl-mega-footer__bottom-section">
-	    <div class="mdl-logo">PicoPlanet Developing</div>
-	    <ul class="mdl-mega-footer__link-list">
-	      <li><a href="about.html">About</a></li>
-	      <li><a href="contact.html">Contact</a></li>
-	    </ul>
-	  </div>
-
-</footer>
 	</div>
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cd8613086e226db"></script>
 </body>
