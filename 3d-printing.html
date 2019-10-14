@@ -131,6 +131,9 @@
 			    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="3d-estimate" disabled>
 			    <label class="mdl-textfield__label" for="3d-estimate">Estimated Cost</label>
 			  </div>
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="getEstimate()">
+				  Estimate!
+				</button>
 			</form>
 
 			<!-- share -->
@@ -144,20 +147,22 @@
 		</main>
 	</div>
 	<script type="text/javascript">
-		var designNeeded = document.getElementById('3d-design-checkbox')
-		var estimateText = document.getElementById('3d-estimate');
-		var gramsInput = document.getElementById('3d-printing-grams-input')
+		function getEstimate() {
+			var designNeeded = document.getElementById('3d-design-checkbox')
+			var estimateText = document.getElementById('3d-estimate');
+			var gramsInput = document.getElementById('3d-printing-grams-input')
 
-		var currentEstimate = 0;
+			var currentEstimate = 0;
 
-		if (designNeeded.checked == true) {
-			currentEstimate = 10;
+			if (designNeeded.checked == true) {
+				currentEstimate = 10;
+			}
+			if (designNeeded.checked != true) {
+				currentEstimate = 0;
+			}
+			currentEstimate += (0.10 * gramsInput.value)
+			estimateText.value += currentEstimate;
 		}
-		if (designNeeded.checked != true) {
-			currentEstimate = 0;
-		}
-		currentEstimate += (0.10 * gramsInput.value)
-		estimateText.value += currentEstimate;
 	</script>
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
 	<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cd8613086e226db"></script>
