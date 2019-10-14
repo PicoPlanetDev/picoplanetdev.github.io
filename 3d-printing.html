@@ -116,25 +116,41 @@
 				a ballpark for cost.
 			</p>
 
-			<form style="padding-left: 1%; background-color: #c2e0ff">
-				<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="3d-design-checkbox">
-				  <input type="checkbox" id="3d-design-checkbox" class="mdl-checkbox__input">
-				  <span class="mdl-checkbox__label">3D Design Needed (i.e. no 3D model)</span>
+			<form style="padding-left: 1%; padding-top: 1%; padding-bottom: 1%; background-color: #c2e0ff">
+				3D Design Complexity
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+				  <input type="radio" id="3d-none" class="mdl-radio__button" name="3d-options" value="0">
+				  <span class="mdl-radio__label">None needed (Already have a digital model)</span>
 				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+				  <input type="radio" id="3d-simple" class="mdl-radio__button" name="3d-options" value="1">
+				  <span class="mdl-radio__label">Simple</span>
+				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+				  <input type="radio" id="3d-moderate" class="mdl-radio__button" name="3d-options" value="2">
+				  <span class="mdl-radio__label">Moderate</span>
+				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+				  <input type="radio" id="3d-complex" class="mdl-radio__button" name="3d-options" value="3">
+				  <span class="mdl-radio__label">Complex</span>
+				</label>
+
+				If you have a 3D model:
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 			    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="3d-printing-grams-input">
 			    <label class="mdl-textfield__label" for="3d-printing-grams-input">Mass of your model (grams)</label>
 			    <span class="mdl-textfield__error">Input is not a number!</span>
 			  </div>
 				<br>
+
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="getEstimate()">
+				  Estimate
+				</button>
+
+				Cost <strong>estimate</strong> in USD:
 			  <div class="mdl-textfield mdl-js-textfield">
 			    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="3d-estimate">
-			    <label class="mdl-textfield__label" for="3d-estimate">Estimated Cost</label>
 			  </div>
-				<br>
-				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="getEstimate()">
-				  Estimate!
-				</button>
 			</form>
 
 			<!-- share -->
@@ -149,18 +165,24 @@
 	</div>
 	<script type="text/javascript">
 		function getEstimate() {
-			var designNeeded = document.getElementById('3d-design-checkbox')
+			var designComplexity = document.getElementById('3d-options')
 			var estimateText = document.getElementById('3d-estimate');
 			var gramsInput = document.getElementById('3d-printing-grams-input')
-
 			var currentEstimate = 0;
 
-			if (designNeeded.checked == true) {
-				currentEstimate = 10;
-			}
-			if (designNeeded.checked != true) {
+			if (designComplexity.value == 0) {
 				currentEstimate = 0;
 			}
+			if (designComplexity.value == 0) {
+				currentEstimate = 10;
+			}
+			if (designComplexity.value == 0) {
+				currentEstimate = 15;
+			}
+			if (designComplexity.value == 0) {
+				currentEstimate = 20;
+			}
+
 			currentEstimate += (0.10 * gramsInput.value)
 			estimateText.value = currentEstimate;
 		}
