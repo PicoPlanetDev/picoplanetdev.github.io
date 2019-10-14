@@ -174,16 +174,16 @@
 			var gramsInput = document.getElementById('3d-printing-grams-input')
 			var currentEstimate = 0;
 
-			if (designComplexity.value == 0) {
+			if (document.getElementById('3d-none').checked) {
 				currentEstimate = 0;
 			}
-			if (designComplexity.value == 1) {
+			if (document.getElementById('3d-simple').checked) {
 				currentEstimate = 10;
 			}
-			if (designComplexity.value == 2) {
+			if (document.getElementById('3d-moderate').checked) {
 				currentEstimate = 15;
 			}
-			if (designComplexity.value == 3) {
+			if (document.getElementById('3d-complex').checked) {
 				currentEstimate = 20;
 			}
 
