@@ -113,7 +113,8 @@
 			</p>
 
 			<form style="padding-left: 1%; padding-top: 1%; padding-bottom: 1%; background-color: #c2e0ff">
-				3D Design Complexity
+				<strong>3D Design Complexity</strong>
+				<br>
 				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
 				  <input type="radio" id="3d-none" class="mdl-radio__button" name="3d-options" value="0">
 				  <span class="mdl-radio__label">None needed (Already have a digital model)</span>
@@ -130,8 +131,10 @@
 				  <input type="radio" id="3d-complex" class="mdl-radio__button" name="3d-options" value="3">
 				  <span class="mdl-radio__label">Complex</span>
 				</label>
+				<br>
 
-				If you have a 3D model:
+				<strong>If you have a 3D model:</strong>
+				<br>
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 			    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="3d-printing-grams-input">
 			    <label class="mdl-textfield__label" for="3d-printing-grams-input">Mass of your model (grams)</label>
@@ -142,10 +145,11 @@
 				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="getEstimate()">
 				  Estimate
 				</button>
+				<br>
 
 				Cost <strong>estimate</strong> in USD:
 			  <div class="mdl-textfield mdl-js-textfield">
-			    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="3d-estimate">
+			    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="cost-estimate">
 			  </div>
 			</form>
 
@@ -166,7 +170,7 @@
 	<script type="text/javascript">
 		function getEstimate() {
 			var designComplexity = document.getElementById('3d-options')
-			var estimateText = document.getElementById('3d-estimate');
+			var estimateText = document.getElementById('cost-estimate');
 			var gramsInput = document.getElementById('3d-printing-grams-input')
 			var currentEstimate = 0;
 
