@@ -1,0 +1,23 @@
+11/3/2019:
+Added difficulty slider for 4x4 game, fixed bugs
+
+11/3/2019:
+Fixed slider bugs
+
+11/3/2019:
+Added difficulty slider & settings menu
+
+11/2/2019:
+Added 4x4 game, improved performance
+
+11/2/2019:
+Added Main Menu
+
+11/2/2019:
+Fixed replay, app version
+
+11/2/2019:
+Fixed replay system
+
+11/2/2019:
+Created Puzzle VR
