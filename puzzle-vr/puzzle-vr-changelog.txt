@@ -1,3 +1,6 @@
+11/9/2019
+Added beach theme option
+
 11/6/2019:
 🎉 First Play Store Release! 🎉
 Fixed home button for 3x3 puzzle. View a change log here: https://picoplanetdev.tk/puzzle-vr/puzzle-vr-changelog.txt
