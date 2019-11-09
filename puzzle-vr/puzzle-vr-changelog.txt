@@ -1,4 +1,8 @@
+11/19/2019:
+Added snow theme option
+
 11/9/2019
+Added theme settings
 Added beach theme option
 
 11/6/2019:
