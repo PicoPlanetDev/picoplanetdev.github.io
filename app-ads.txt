@@ -1,0 +1,55 @@
+admix.in, 4788a686-bc58-426b-b76e-352bbf792dcb, DIRECT
+pubmatic.com, 157986, RESELLER, 5d62403b186f2ace
+pubmatic.com, 158500, RESELLER, 5d62403b186f2ace
+yieldnexus.com, 96204, DIRECT
+audience.media, 100358, DIRECT
+appnexus.com, 10617, RESELLER
+appnexus.com, 9393, RESELLER
+advertising.com, 25034, RESELLER
+sonobi.com, 783272317b, RESELLER, d1a215d9eb5aee9e
+spotxchange.com, 85519, RESELLER
+indexexchange.com, 186684, RESELLER
+advenuemedia.co.uk, 220, RESELLER
+advenuemedia.co.uk, 221, RESELLER
+bizzclick.com, 198, RESELLER, 7e936b1feafdaa61
+bizzclick.com, 199, RESELLER, 7e936b1feafdaa61
+appnexus.com, 11053, DIRECT, f5ab79cb980f11d1
+appnexus.com, 11053, RESELLER, f5ab79cb980f11d1
+improvedigital.com, 1393, RESELLER
+openx.com, 540804398, RESELLER, 6a698e2ec38604c6
+advangelists.com, 49182f81e6a13cf5eaa496d51fea6406, DIRECT, 60d26397ec060f98
+fmlabsonline.com, 72954, DIRECT
+gothamads.com, 67, RESELLER
+motionspots.com, AJxF6R47a9M6CaTvK, RESELLER, f0220652b4aaebdc
+pubmatic.com, 157113, RESELLER, 5d62403b186f2ace
+gamoshi.io, 267, DIRECT
+gamoshi.io, 267, RESELLER
+improvedigital.com, 1275, DIRECT
+improvedigital.com, 1275, RESELLER
+sonobi.com,  8ef6b65eef, RESELLER, d1a215d9eb5aee9e
+rhythmone.com, 1059622079, RESELLER, a670c89d4a324e47
+contextweb.com, 560606, RESELLER, 89ff185a4c4e857c
+pubnative.net, 1007314, DIRECT, d641df8625486a7b
+Verve.com, 15290, DIRECT, 0c8f5958fc2d6270 #Verve
+pubnative.net, 1007314, RESELLER, d641df8625486a7b
+Pubmatic.com, 155975, RESELLER, 5d62403b186f2ace
+Pubmatic.com, 156517, RESELLER, 5d62403b186f2ace #Verve
+openx.com, 537152826, RESELLER, 6a698e2ec38604c6
+openx.com, 539472296, RESELLER, 6a698e2ec38604c6
+openx.com, 540543195, RESELLER, 6a698e2ec38604c6 #Verve
+appnexus.com, 8178, RESELLER, f5ab79cb980f11d1
+rubiconproject.com, 17328, RESELLER, 0bfd66d529a55807
+Rubiconproject.com, 15278, RESELLER, 0bfd66d529a55807 #Verve
+adcolony.com, 1efc6603710003ea, RESELLER, 1ad675c9de6b5176
+Contextweb.com, 561884, RESELLER, 89ff185a4c4e857c
+rhythmone.com, 4173858586, RESELLER, a670c89d4a324e47
+improvedigital.com, 1366, RESELLER
+EMXDGT.com, 1324, RESELLER, 1e1d41537f7cad7f
+engagebdr.com, 10252, RESELLER #banner #video
+bidmachine.io, 55, RESELLER
+bidmachine.io, 59, RESELLER
+Inmobi.com, c1e6d3502da64ebaa3ad0e4a4be15f11, RESELLER, 83e75a7ae333ca9d #Verve
+Sabio.us, 100032, RESELLER, 96ed93aaa9795702 #Verve
+advertising.com, 28246, RESELLER
+rubiconproject.com, 11006, RESELLER, 0bfd66d529a55807
+onetag.com, 57882b5669f6f08, DIRECT
