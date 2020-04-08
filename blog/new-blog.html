@@ -56,6 +56,11 @@
       font-size: 13px;
     }
     </style>
+    <script type="text/javascript">
+			var addthis_config = addthis_config||{};
+			addthis_config.data_track_addressbar = false;
+			addthis_config.data_track_clickback = false;
+		</script>
   </head>
   <body>
     <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
@@ -79,6 +84,13 @@
             <p>
               Here's PicoPlanet's new blog! If I have anything interesting to post, you can find it here.
             </p>
+            <!--Share-->
+            <p class="paragraph">
+    					Share this page via
+    					<br>
+    					<!-- Go to www.addthis.com/dashboard to customize your tools-->
+    					<div class="addthis_inline_share_toolbox" data-url="picoplanetdev.tk/blog" data-title="Blog - PicoPlanet Developing" style="padding-left: 1%"></div>
+            </p>
           </div>
         </div>
         <footer class="demo-footer mdl-mini-footer">
@@ -91,5 +103,7 @@
       </main>
     </div>
     <script src="$$hosted_libs_prefix$$/$$version$$/material.min.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools-->
+		<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cd8613086e226db"></script>
   </body>
 </html>
