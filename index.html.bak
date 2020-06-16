@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home - PicoPlanet Developing</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
+	<link rel="icon" href="/images/icons/favicon.ico"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="description" content="PicoPlanet Developing Home">
+	<meta name="keywords" content="PicoPlanet, PicoPlanetDev, App, Apps, VR Playground, Rabbit Dash, Chemistry VR Photos, Development, Dev, Android, Website, Play Store, Games, VR, Unity">
+
+	<style>
+	.mdl-layout__content .heading-div .heading {
+		background-image: url('/images/background/PicoPlanetBackground12.png');
+		padding-top: 15%;
+		padding-bottom: 15%;
+	}
+	</style>
+
+	<script>
+	$(function(){
+		$('.mdl-collapse__content').each(function(){
+			var content = $(this);
+			content.css('margin-top', -content.height());
+		})
+
+		$(document.body).on('click', '.mdl-collapse__button', function(){
+			$(this).parent('.mdl-collapse').toggleClass('mdl-collapse--opened');
+		})
+	})
+	</script>
+
+	<script type="text/javascript">
+	var addthis_config = addthis_config||{};
+	addthis_config.data_track_addressbar = false;
+	addthis_config.data_track_clickback = false;
+	</script>
+</head>
+
+<body>
+	<!-- Header with menu -->
+	<div class="layout-transparent mdl-layout mdl-js-layout">
+		<header class="mdl-layout__header mdl-layout__header--fixed">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">PicoPlanet Developing</span>
+			</div>
+		</header>
+		<!-- navigation drawer -->
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title"><a href="index.html"><img src="/images/icons/planet-clip-art-planet-64-clear.png" alt="logo" height="42" width="42"></a></span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="index.html">Home</a>
+				<div class="mdl-collapse">
+					<a class="mdl-navigation__link mdl-collapse__button">
+						<i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+						Apps
+					</a>
+					<div class="mdl-collapse__content-wrapper">
+						<div class="mdl-collapse__content mdl-animation--default">
+							<a class="mdl-navigation__link" href="apps.html">Apps</a>
+							<a class="mdl-navigation__link" href="files.html">Files</a>
+							<a class="mdl-navigation__link" href="vr-drum-kit.html"><img src="/images/drum-kit/drum-kit-icon.png" alt="vr-drum-kit-icon" width="32px">VR Drum Kit</a>
+							<a class="mdl-navigation__link" href="farm-game.html"><img src="/images/icons/farm-game-icon.png" alt="VR Farm Game Icon" width="32px">VR Farm Game</a>
+							<a class="mdl-navigation__link" href="vr-playground.html"><img src="/images/icons/vr-playground-icon.png" alt="vr-playground-icon" width="32px"> VR Playground</a>
+							<a class="mdl-navigation__link" href="rabbit-dash.html"><img src="/images/icons/rabbit-dash-icon.png" alt="rabbit-dash-icon" width="32px"> Rabbit Dash</a>
+							<a class="mdl-navigation__link" href="chemistry-vr-photos.html"><img src="/images/icons/chem-icon.png" alt="chem-icon" width="32px"> Chemistry VR Photos</a>
+							<a class="mdl-navigation__link" href="trailblazer-vr.html"><img src="/images/icons/trailblazer-icon.png" alt="trailblazer-icon" width="32px"> Trailblazer VR</a>
+							<a class="mdl-navigation__link" href="puzzle-vr.html"><img src="/images/icons/puzzle-vr-icon.png" alt="puzzle-vr-icon" width="32px"> Puzzle VR</a>
+						</div>
+					</div>
+				</div>
+				<div class="mdl-collapse">
+					<a class="mdl-navigation__link mdl-collapse__button">
+						<i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+						Maker
+					</a>
+					<div class="mdl-collapse__content-wrapper">
+						<div class="mdl-collapse__content mdl-animation--default">
+							<a class="mdl-navigation__link" href="maker.html">Maker</a>
+							<a class="mdl-navigation__link" href="rocketry.html">Rocketry</a>
+							<a class="mdl-navigation__link" href="3d-printing.html">3D Printing</a>
+							<a class="mdl-navigation__link" href="laser-cutting.html">Laser Cutting</a>
+						</div>
+					</div>
+				</div>
+				<a class="mdl-navigation__link" href="about.html">About Me</a>
+				<a class="mdl-navigation__link" href="blog.html">Blog</a>
+				<a class="mdl-navigation__link" href="social.html">Social</a>
+				<a class="mdl-navigation__link" href="contact.html">Contact Us</a>
+			</nav>
+		</div>
+
+		<!-- page content -->
+		<main class="mdl-layout__content">
+			<div class="heading-div">
+				<h1 class="heading">Home</h1>
+			</div>
+			<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+					<h3 style="padding-left:1%">
+						Software and Hardware Development,<br>
+						by PicoPlanetDev
+					</h3>
+					<p class="paragraph">
+						PicoPlanet Developing creates games for VR, the newest and most
+						immersive gaming medium. PicoPlanet has multiple apps on the Google
+						Play Store. I also tinker with code and make games, programs, and
+						apps for my own enjoyment!
+					</p>
+					<button onclick="location.href='apps.html';" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+						Apps
+					</button>
+					<button onclick="location.href='maker.html';" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+						Maker
+					</button>
+
+					<p class="emphasis-2-paragraph" style="margin-top: 1%; border-radius: 10px;">
+						Farming simulators are always fun to play. But there aren't any immersive farm games... until now!<br>
+						Get <a href="farm-game.html">VR Farm Game</a> for PC virtual reality headsets and on the Oculus Quest:
+						<iframe frameborder="0" src="https://itch.io/embed/638780?border_width=0&amp;link_color=4da0f4" width="550" height="165">
+							<a href="https://picoplanetdev.itch.io/vr-farm-game">VR Farm Game by PicoPlanetDev</a>
+						</iframe>
+					</p>
+
+					<p class="emphasis-2-paragraph" style="margin-top: 1%; border-radius: 10px;">
+						Calling all Rift and Rift S owners! Test out VR Drum Kit
+						by reading the directions in the <a href="apps.html">Apps</a> section.
+						Works with Oculus Touch controllers. I would appreciate your feedback!
+					</p>
+
+					<p class="emphasis-2-paragraph" style="margin-top: 1%; border-radius: 10px;">
+						<strong>Update:</strong> PicoPlanetDev will remain open and online
+						during the Coronavirus situation. Also, feel free to contact me anytime
+						on the <a href="contact.html">Contact</a> page, by
+						<a href="mailto:picoplanetdev@gmail.com">emailing me</a>,
+						or with PicoPlanet's <strong>new Google Voice number: (412) 294-8269</strong>.
+					</p>
+				</div>
+
+				<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+					<img style="border-radius: 10px;" src="/images/maker/Tarantula_1000x750_web.jpg" alt="3D printer image" width="100%">
+					<!--<picture  style="border-radius: 10px" alt="3D printer image" width="100%">
+						<source srcset="/images/maker/Tarantula_1000x750_web.webp">
+						<source srcset="/images/maker/Tarantula_1000x750_web.jpg">
+					</picture>-->
+				</div>
+			</div>
+
+			<p>
+				To look around my website, please use the navigation bar on the left.
+				On some devices, you may need to click on the menu button (☰) to see this bar.
+			</p>
+			<p>
+				Contact me at picoplanetdev@gmail.com or by submitting a form in
+				Contact and Customer Service.
+			</p>
+			<p>
+				Go to our <a href="social.html">Social</a> page to find out how to connect with me!
+			</p>
+
+			<hr>
+			<div class="mdl-grid" id="app-icon-grid">
+				<div class="mdl-cell mdl-cell--1-col">
+					<a id="vr-playground-home-icon" href="vr-playground.html">
+						<img src="/images/icons/vr-playground-icon.png" alt="vr-playground-icon" width="100%">
+					</a>
+				</div>
+				<div class="mdl-cell mdl-cell--1-col">
+					<a id="rabbit-dash-home-icon" href="rabbit-dash.html">
+						<img src="/images/icons/rabbit-dash-icon.png" alt="rabbit-dash-icon" width="100%">
+					</a>
+				</div>
+				<div class="mdl-cell mdl-cell--1-col">
+					<a id="chem-home-icon" href="chemistry-vr-photos.html">
+						<img src="/images/icons/chem-icon.png" alt="chem-icon" width="100%">
+					</a>
+				</div>
+				<div class="mdl-cell mdl-cell--1-col">
+					<a id="trailblazer-home-icon" href="trailblazer-vr.html">
+						<img src="/images/icons/trailblazer-icon.png" alt="trailblazer-icon" width="100%">
+					</a>
+				</div>
+				<div class="mdl-cell mdl-cell--1-col">
+					<a id="puzzle-vr-home-icon" href="puzzle-vr.html">
+						<img src="/images/icons/puzzle-vr-icon.png" alt="puzzle-vr-icon" width="100%">
+					</a>
+				</div>
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="vr-playground-home-icon">
+				VR Playground
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="rabbit-dash-home-icon">
+				Rabbit Dash
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="chem-home-icon">
+				Chemistry VR Photos
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="trailblazer-home-icon">
+				Trailblazer VR
+			</div>
+			<div class="mdl-tooltip" data-mdl-for="puzzle-vr-home-icon">
+				Puzzle VR
+			</div>
+			<hr>
+
+			<p class="emphasis-2-paragraph">
+				See another website that I designed here: <a href="https://crazybirdj9.tk">CrazyBirdJ9.tk</a>
+			</p>
+
+			<!-- share -->
+			<hr>
+			<p class="paragraph" id="share-paragraph">
+				Share this page via
+				<br>
+				<div class="addthis_inline_share_toolbox" data-url="picoplanetdev.tk/index" data-title="Home - PicoPlanet Developing" style="padding-left: 1%"></div>
+			</p>
+			<footer class="mdl-mega-footer">
+				<div class="mdl-mega-footer__middle-section">
+
+					<div class="mdl-mega-footer__drop-down-section">
+						<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+						<h1 class="mdl-mega-footer__heading"><a href="apps.html">Apps</a></h1>
+						<ul class="mdl-mega-footer__link-list">
+							<li><a href="files.html">Files</a></li>
+							<li><a href="vr-playground.html">VR Playground</a></li>
+							<li><a href="rabbit-dash.html">Rabbit Dash</a></li>
+							<li><a href="chemistry-vr-photos.html">Chemistry VR Photos</a></li>
+							<li><a href="trailblazer-vr.html">Trailblazer VR</a></li>
+						</ul>
+					</div>
+
+					<div class="mdl-mega-footer__drop-down-section">
+						<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+						<h1 class="mdl-mega-footer__heading"><a href="maker.html">Maker</a></h1>
+						<ul class="mdl-mega-footer__link-list">
+							<li><a href="rocketry.html">Rocketry</a></li>
+							<li><a href="3d-printing.html">3D Printing</a></li>
+							<li><a href="laser-cutting.html">Laser Cutting</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="mdl-mega-footer__bottom-section">
+					<div class="mdl-logo">Copyright 2020 PicoPlanet Developing</div>
+					<ul class="mdl-mega-footer__link-list">
+						<li><a href="mailto:picoplanetdev@gmail.com" target="_blank">picoplanetdev@gmail.com</a></li>
+						<li><a href="tel:412-294-8269">(412)-294-8269</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="about.html">Social</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</footer>
+		</main>
+	</div>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cd8613086e226db"></script>
+</body>
+</html>
