@@ -1,2 +1,2 @@
-# picoplanetdev.github.io
-This repository is used to host the website https://picoplanetdev.tk, which we use to display our apps.
+# https://picoplanetdev.tk
+This repository is used to host my website, https://picoplanetdev.tk.
