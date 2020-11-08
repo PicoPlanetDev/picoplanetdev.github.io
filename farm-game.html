@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Crop Craze - PicoPlanet Developing</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="/images/icons/favicon.ico"/>
+	<link rel="icon" href="/images/icons/favicon.ico" />
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="description" content="Crop Craze - PicoPlanet Developing"/>
-	<meta name="keywords" content="PicoPlanet, PicoPlanetDev, App, Apps, VR Playground, Rabbit Dash, Chemistry VR Photos, Development, Dev, Android, Website, Play Store, Games, VR, Unity"/>
+	<meta name="description" content="Crop Craze - PicoPlanet Developing" />
+	<meta name="keywords"
+		content="PicoPlanet, PicoPlanetDev, App, Apps, VR Playground, Rabbit Dash, Chemistry VR Photos, Development, Dev, Android, Website, Play Store, Games, VR, Unity" />
 	<style type="text/css">
 		.mdl-layout__content .heading-div .heading {
-			background-image: url('/images/farm-game/cover/cover.png'); <!-- TODO: Change this later -->
+			background-image: url('/images/farm-game/cover/cover.png');
+			< !-- TODO: Change this later -->
 		}
 	</style>
 	<script>
-		$(function(){
-			$('.mdl-collapse__content').each(function(){
+		$(function () {
+			$('.mdl-collapse__content').each(function () {
 				var content = $(this);
 				content.css('margin-top', -content.height());
 			})
 
-			$(document.body).on('click', '.mdl-collapse__button', function(){
+			$(document.body).on('click', '.mdl-collapse__button', function () {
 				$(this).parent('.mdl-collapse').toggleClass('mdl-collapse--opened');
 			})
 		})
 	</script>
 	<script type="text/javascript">
-		var addthis_config = addthis_config||{};
+		var addthis_config = addthis_config || {};
 		addthis_config.data_track_addressbar = false;
 		addthis_config.data_track_clickback = false;
 	</script>
@@ -47,7 +50,9 @@
 
 		<!-- navigation drawer -->
 		<div class="mdl-layout__drawer">
-			<span class="mdl-layout-title"><a href="index.html"><img src="/images/icons/planet-clip-art-planet-64-clear.png" alt="logo" height="42" width="42"></a></span>
+			<span class="mdl-layout-title"><a href="index.html"><img
+						src="/images/icons/planet-clip-art-planet-64-clear.png" alt="logo" height="42"
+						width="42"></a></span>
 			<nav class="mdl-navigation">
 				<a class="mdl-navigation__link" href="index.html">Home</a>
 				<div class="mdl-collapse">
@@ -69,9 +74,9 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<a class="mdl-navigation__link" href="about.html">About Me</a>
-				 
+
 				<a class="mdl-navigation__link" href="social.html">Social</a>
 				<a class="mdl-navigation__link" href="contact.html">Contact Me</a>
 			</nav>
@@ -85,60 +90,77 @@
 			</div>
 			<!--screenshots grid-->
 			<div class="mdl-grid">
-				<div class="mdl-cell mdl-cell--4-col"><img class="tri-image" src="images/farm-game/screenshots/Barns.png" alt="Image of barns" height="auto" width="100%"></div>
-				<div class="mdl-cell mdl-cell--4-col"><img class="tri-image" src="images/farm-game/screenshots/Chickens.png" alt="Image of chicken coop" height="auto" width="100%"></div>
-				<div class="mdl-cell mdl-cell--4-col"><img class="tri-image" src="images/farm-game/screenshots/Crops.png" alt="Image of crops in the rain" height="auto" width="100%"></div>
-				<div class="mdl-cell mdl-cell--4-col"><img class="tri-image" src="images/farm-game/screenshots/Fire Pit.png" alt="Image of fire pit" height="auto" width="100%"></div>
-				<div class="mdl-cell mdl-cell--4-col"><img class="tri-image" src="images/farm-game/screenshots/Pond.png" alt="Image of pond" height="auto" width="100%"></div>
-				<div class="mdl-cell mdl-cell--4-col"><img class="tri-image" src="/images/icons/farm-game-icon.png" alt="Farm game icon" height="100%" width="auto"></div>
+				<div class="mdl-cell mdl-cell--4-col"><img class="tri-image"
+						src="images/farm-game/screenshots/Barns.png" alt="Image of barns" height="auto" width="100%">
+				</div>
+				<div class="mdl-cell mdl-cell--4-col"><img class="tri-image"
+						src="images/farm-game/screenshots/Chickens.png" alt="Image of chicken coop" height="auto"
+						width="100%"></div>
+				<div class="mdl-cell mdl-cell--4-col"><img class="tri-image"
+						src="images/farm-game/screenshots/Crops.png" alt="Image of crops in the rain" height="auto"
+						width="100%"></div>
+				<div class="mdl-cell mdl-cell--4-col"><img class="tri-image"
+						src="images/farm-game/screenshots/Fire Pit.png" alt="Image of fire pit" height="auto"
+						width="100%"></div>
+				<div class="mdl-cell mdl-cell--4-col"><img class="tri-image" src="images/farm-game/screenshots/Pond.png"
+						alt="Image of pond" height="auto" width="100%"></div>
+				<div class="mdl-cell mdl-cell--4-col"><img class="tri-image" src="/images/icons/farm-game-icon.png"
+						alt="Farm game icon" height="100%" width="auto"></div>
 			</div>
 
 			<!-- paragraph -->
 			<p>
-				<a href="https://picoplanetdev.itch.io/vr-farm-game" target="_blank"><b>Download Crop Craze on itch.io for Rift or SteamVR!</b></a><br>
-				<a href="https://sidequestvr.com/app/985/" target="_blank"><b>Install it on SideQuest for Oculus Quest or Quest 2! <a href="https://sidequestvr.com/setup-howto">Need help installing SideQuest?</a></b></a>
+				<a href="https://picoplanetdev.itch.io/vr-farm-game" target="_blank"><b>Download Crop Craze on itch.io
+						for Rift or SteamVR!</b></a><br>
+				<a href="https://sidequestvr.com/app/985/" target="_blank"><b>Install it on SideQuest for Oculus Quest
+						or Quest 2! <a href="https://sidequestvr.com/setup-howto">Need help installing
+							SideQuest?</a></b></a>
 				<br>
 				A currently in-development game, Crop Craze: Farming Simulator
 				will be the <strong>first fully immersive Virtual Reality farming simulator</strong>.
 				In Crop Craze, you can:
-				<ul>
-					<li>Buy seeds, plant crops, water, and harvest them</li>
-					<li>Sell items at the market</li>
-					<li>Buy animals for extra bonuses</li>
-					<li>Grow flowers and plants in the greenhouse</li>
-					<li>Explore the countryside</li>
-					<li>Invest in more land</li>
-					<li>Roast marshmallows</li>
-					<li>And more!</li>
-				</ul>
+			<ul>
+				<li>Buy seeds, plant crops, water, and harvest them</li>
+				<li>Sell items at the market</li>
+				<li>Buy animals for extra bonuses</li>
+				<li>Grow flowers and plants in the greenhouse</li>
+				<li>Explore the countryside</li>
+				<li>Invest in more land</li>
+				<li>Roast marshmallows</li>
+				<li>And more!</li>
+			</ul>
 			</p>
 			<p>
 				Want to experience Crop Craze without installing it? Or don't have a
-				compatible VR headset? <a href="https://www.facebook.com/picoplanet.developing.94/posts/192589412277081" target="_blank">
-			  	Look around inside inside this 360° photo of Crop Craze!</a>
+				compatible VR headset? <a href="https://www.facebook.com/picoplanet.developing.94/posts/192589412277081"
+					target="_blank">
+					Look around inside inside this 360° photo of Crop Craze!</a>
 			</p>
 			<p>
 				<strong>Here are some handy links:</strong>
-				<ul>
-					<li><a href="https://discord.gg/ZHCkxcu" target="_blank">PicoPlanet's Discord Server</a></li>
-					<li><a href="https://sidequestvr.com/app/985/" target="_blank">SideQuest page</a> </li>
-					<li><a href="https://picoplanetdev.itch.io/vr-farm-game" target="_blank">itch.io page</a> </li>
-					<li><a href="https://www.youtube.com/channel/UCV_58sn3cRbJ2X37lZk26ug" target="_blank">PicoPlanet's YouTube Channel</a></li>
-					<li><a href="https://forms.gle/Zt9G5wegX9zBv1Jg8" target="_blank">Give Feedback</a></li>
-				</ul>
+			<ul>
+				<li><a href="https://discord.gg/ZHCkxcu" target="_blank">PicoPlanet's Discord Server</a></li>
+				<li><a href="https://sidequestvr.com/app/985/" target="_blank">SideQuest page</a> </li>
+				<li><a href="https://picoplanetdev.itch.io/vr-farm-game" target="_blank">itch.io page</a> </li>
+				<li><a href="https://www.youtube.com/channel/UCV_58sn3cRbJ2X37lZk26ug" target="_blank">PicoPlanet's
+						YouTube Channel</a></li>
+				<li><a href="https://forms.gle/Zt9G5wegX9zBv1Jg8" target="_blank">Give Feedback</a></li>
+			</ul>
 			</p>
 
-		<!-- share -->
-		<hr>
-		<p class="paragraph">
-			Share this page via
-			<br>
-			<!-- Go to www.addthis.com/dashboard to customize your tools -->
-			<div class="addthis_inline_share_toolbox" data-url="picoplanetdev.tk/farm-game" data-title="Crop Craze - PicoPlanet Developing" style="padding-left: 1%"></div>
-		</p>
-	</main>
-</div>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cd8613086e226db"></script>
+			<!-- share -->
+			<hr>
+			<p class="paragraph">
+				Share this page via
+				<br>
+				<!-- Go to www.addthis.com/dashboard to customize your tools -->
+			<div class="addthis_inline_share_toolbox" data-url="picoplanetdev.tk/farm-game"
+				data-title="Crop Craze - PicoPlanet Developing" style="padding-left: 1%"></div>
+			</p>
+		</main>
+	</div>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5cd8613086e226db"></script>
 </body>
+
 </html>
